@@ -22,6 +22,11 @@ TEST(EchoTest, TwoPlusTwoEqualsFour) {
     EXPECT_EQ("2 + 2 = 4", echo(6,test_val));
 }
 
+TEST(EchoTest, AlyssaIsPerfect) {
+    char* test_val[4]; test_val[0] = "./c-echo"; test_val[1] = "Alyssa"; test_val[2] = "is"; test_val[3] = "PERFECT!!";
+    EXPECT_EQ("Alyssa is PERFECT!!", echo(4,test_val));
+}
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
